@@ -2,7 +2,7 @@ import { Component } from 'react';
 import { FormContact } from './FormContact/FormContact';
 import { ListContact } from './ListContact/ListContact';
 import { Filter } from './Filter/Filter';
-import { nanoid } from 'https://cdn.jsdelivr.net/npm/nanoid/nanoid.js';
+import { nanoid } from 'nanoid';
 import { Conteiner, Box } from './App.styled';
 export class App extends Component {
   state = {
