@@ -5,6 +5,7 @@ export const ListContact = ({onDeletContact, contacts }) => {
   return (
     <ul>
       {contacts.map(({ id, name, number }) => (
+        
         <ItemContact key={id} id = {id} name={name} number={number} deletContact={onDeletContact } />
 
       ))}
