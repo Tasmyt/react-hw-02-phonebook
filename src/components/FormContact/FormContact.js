@@ -9,7 +9,6 @@ export class FormContact extends Component {
         const { name, value } = e.currentTarget;
         this.setState({[name]: value});
     }
-
     ResetInput = e => {
         e.preventDefault();  
         this.props.onAddContact(this.state);
