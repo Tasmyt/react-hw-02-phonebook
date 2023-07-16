@@ -7,7 +7,6 @@ import { Conteiner, Box } from './App.styled';
 export class App extends Component {
   state = {
     contacts: [{ id: nanoid(), name: 'Rosie Simpson', number: '459-12-56' }],
-    name: '',
     filter: '',
   };
 
@@ -25,7 +24,7 @@ export class App extends Component {
       return { contacts: list };
     });
   };
-  InputChangeFilter = e => {
+  inputChangeFilter = e => {
     const { name, value } = e.currentTarget;
     this.setState({ [name]: value });
   };
@@ -53,7 +52,7 @@ export class App extends Component {
         <Box>
         <p>Find contacts by name</p>
         <Filter
-          changeFilter={this.InputChangeFilter}
+          changeFilter={this.inputChangeFilter}
           filter={this.state.filter}
         />        
         <ListContact

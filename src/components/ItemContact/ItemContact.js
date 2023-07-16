@@ -4,7 +4,7 @@ export const ItemContact = ({ id, name, number, deletContact }) => {
   
   return (
     
-      <li key={id}>
+      <li>
         <Li>
       <p>
         {name}: {number};
